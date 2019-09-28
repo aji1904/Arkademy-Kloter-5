@@ -4,7 +4,12 @@ const thirdHighest = arr => {
     }else if(arr.length < 3){
         console.log('Minimal array length is 3!')
     }else{
-        const sorting = arr.sort()
+        const int = arr.sort(function (a) {
+            return !/^\d+$/.test(a);
+        });
+        const sorting = int.sort(function(a, b){
+            return b-a
+        })
         console.log(sorting[2])
     }
 }
