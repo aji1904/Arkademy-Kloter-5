@@ -1,13 +1,11 @@
-function thirdHighest(arr){
-    var arrObject3 = 4
-    var arr3 = arr.slice(0, arrObject3)
-    console.log(arr3)
-    if(typeof arr3 == 'string'){
+const thirdHighest = arr => {
+    if(typeof arr == 'string'){
         console.log('Parameter should be an array!')
-    }else if(arr3.length < arrObject3){
+    }else if(arr.length < 3){
         console.log('Minimal array length is 3!')
     }else{
-        console.log(arr3)
+        const sorting = arr.sort()
+        console.log(sorting[3])
     }
 }
 
