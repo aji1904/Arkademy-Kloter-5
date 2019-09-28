@@ -5,7 +5,7 @@ const thirdHighest = arr => {
         console.log('Minimal array length is 3!')
     }else{
         const sorting = arr.sort()
-        console.log(sorting[3])
+        console.log(sorting[2])
     }
 }
 
